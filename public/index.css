@@ -1,0 +1,59 @@
+
+html {
+  padding: 2em;
+  min-width: 1024px;
+  min-height: 768px;
+  overflow: hidden;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 20px,
+    #ebebeb 20px,
+    #ebebeb 40px
+  );
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  user-select: none;
+}
+
+.help-hint, .trash-area {
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(161, 161, 161);
+}
+
+.trash-area {
+  position: absolute;
+  left: 3em;
+  top: 3em;
+  padding: 3em;
+  transition: border-color 200ms ease;
+  border: dotted 10px rgb(255, 213, 213);
+}
+.trash-area.drag-over {
+  border-color: rgb(255, 142, 142);
+}
+
+.sticky-note {
+  position: absolute;
+  outline: none;
+  padding: 1em;
+  border-radius: 1em;
+  transition: box-shadow 200ms ease, opacity 1s ease;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+.sticky-note.drag {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.sticky-note.deleted {
+  opacity: 0;
+}

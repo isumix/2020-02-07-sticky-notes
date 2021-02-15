@@ -1,0 +1,13 @@
+{
+  "name": "2020-02-07-sticky-notes",
+  "version": "1.0.0",
+  "description": "Test task to create a sticky notes SPA.",
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "author": "Igor Sukharev <imixaly4@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
